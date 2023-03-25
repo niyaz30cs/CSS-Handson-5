@@ -1,0 +1,385 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.back
+{
+    background-color: yellow;
+}
+.box
+{
+   display: flex;
+   justify-content: center;
+   margin: 20px;
+}
+.row1
+{
+    width: 150px;
+    height: 150px;
+    background-color: darkslategrey;
+    margin: 50px;
+    animation-name: first;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes first {
+    0%{
+        transform: skewX(30deg);
+    }
+    100%{
+        transform: skewX(-30deg);
+    }
+    
+}
+.row2
+{
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    margin: 50px;
+    animation-name: second;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes second {
+    0%{
+        transform: skewY(30deg);
+    }
+    100%{
+        transform: skewY(-30deg);
+    }
+    
+}
+.row3
+{
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    background-color: cornflowerblue;
+    animation-name: third;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes third {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.row4
+{
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    background-color: dodgerblue;
+    animation-name: four;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes four {
+    0%{
+        transform: scaleY(0.5);
+    }
+    
+}
+.row5{
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    background-color: brown;
+    animation-name: five;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes five {
+    0%{
+        transform: scaleX(0.25);
+    }    
+}
+.row6
+{
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    background-color: seagreen;
+    animation-name: six;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes six {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+.anchor
+{
+    text-align: center;
+    font-size: 50px;
+}
+.thar
+{
+    color: black;
+}
+h1 
+{
+    text-align: center;
+}
+.parent
+{
+    display: flex;
+    justify-content: center;
+
+}
+.box2
+{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: green;
+}
+.magic1
+{
+    transition: all 0.6s;
+}
+.magic1:hover
+{
+  width: 300px;   
+}
+.magic2
+{
+    transition: all 0.6s;
+}
+.magic2:hover
+{
+    width: 300px;
+    height: 300px;
+}
+.magic3
+{
+    transition: all 0.6s ease-in;
+}
+.magic3:hover
+{
+    width: 300px;
+}
+.magic4
+{
+    transition: all 0.6s ease-out;
+}
+.magic4:hover
+{
+    width: 300px;
+}
+.magic5
+{
+    transition: all 0.6s ease-in-out;
+}
+.magic5:hover
+{
+    width: 300px;
+}
+.magic6
+{
+    transition: all 0.6s ease;
+}
+.magic6:hover
+{
+    width: 300px;
+}
+.magic7
+{
+    transition: all 0.6s linear;
+}
+.magic7:hover
+{
+    width: 300px;
+}
+/* for CSS page-3 write here */
+body
+{
+    margin: 0;
+    padding: 0;
+    border: 10px groove;
+    border-color: white green white orange;
+}
+
+.sky
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./sky.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+
+}
+.top
+{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+.one
+{
+    background-color: orangered;
+    margin: 5px;
+}
+.two
+{
+    background-color: white;
+    margin: 5px;
+}
+.three
+{
+    background-color: darkgreen;
+    margin: 5px;
+}
+.road
+{
+    background-image: url("./road.jpg");
+    width: 500%;
+    height: 200px;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-repeat: repeat-x; */
+    animation-name: highway;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+}
+@keyframes highway {
+    100%{
+        transform: translateX(-2550px);
+    }
+}
+.city
+{
+    background-image: url("./city.png");
+    width: 500%;
+    height: 250px;
+    position:  absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation-name: city;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+}
+@keyframes city {
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.car
+{
+  width: 400px;
+  left: 50%;
+  bottom: 98px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+.car img
+{
+    width: 100%;
+    animation-name: car;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+}
+@keyframes car {
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+.wheel
+{
+    bottom: 178px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.wheel img
+{
+    width: 73px;
+    height: 73px;
+    animation-name: wheel;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+}
+@keyframes wheel {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.back-wheel
+{
+    left: -165px;
+    position: absolute;
+}
+.front-wheel
+{
+    left: 80px;
+    position: absolute;
+}
+.set
+{
+    width: 70px;
+    height: 70px;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    right: 30px;
+    animation-name: safe;
+    animation-duration: 30s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+
+
+}
+@keyframes safe {
+    100%{
+        transform: translateX(-200px);
+    }  
+}
+.flag
+{
+    background-image: url("/Tiranga1.svg");
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    bottom: 200px;
+    left: 770px;
+
+}
